@@ -2,7 +2,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/database/database.dart';
 import 'package:flutter_application_1/screens/TelaCalculadoraImc.dart';
-import 'package:flutter_application_1/screens/telaBoasVindas.dart';
 import 'package:flutter_application_1/screens/telaCadastro.dart';
 
 class TelaLogin extends StatefulWidget {

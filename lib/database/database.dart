@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 
@@ -18,7 +17,7 @@ class DatabaseHelper {
   Future<Database> initDatabase() async {
     return openDatabase(
       join(await getDatabasesPath(), 'user_database.db'),
-      version: 2, // incrementado para recriar a tabela
+      version: 2, //recria a tabela no banco
       onCreate: (db, version) async {
         await db.execute(
           "CREATE TABLE users(id INTEGER PRIMARY KEY AUTOINCREMENT, nome TEXT, email TEXT, password TEXT)",
